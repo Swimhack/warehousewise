@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Package, MapPin, TruckIcon, AlertTriangle, Activity, Users } from "lucide-react";
 import { toast } from "sonner";
+import SampleDataButton from "@/components/SampleDataButton";
 
 interface DashboardStats {
   totalProducts: number;
@@ -166,9 +167,12 @@ const Dashboard = () => {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-        <Badge variant="outline" className="text-sm">
-          Real-time data
-        </Badge>
+        <div className="flex items-center gap-3">
+          <SampleDataButton />
+          <Badge variant="outline" className="text-sm">
+            Real-time data
+          </Badge>
+        </div>
       </div>
 
       {/* Stats Grid */}

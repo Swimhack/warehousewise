@@ -9,6 +9,9 @@ import Dashboard from "./pages/Dashboard";
 import Inventory from "./pages/Inventory";
 import Locations from "./pages/Locations";
 import Receive from "./pages/Receive";
+import PickOrders from "./pages/PickOrders";
+import Movements from "./pages/Movements";
+import AIAssistant from "./pages/AIAssistant";
 import AppLayout from "./components/layout/AppLayout";
 import NotFound from "./pages/NotFound";
 
@@ -47,6 +50,9 @@ const App = () => (
               <Route path="inventory" element={<Inventory />} />
               <Route path="locations" element={<Locations />} />
               <Route path="receive" element={<Receive />} />
+              <Route path="pick-orders" element={<PickOrders />} />
+              <Route path="movements" element={<Movements />} />
+              <Route path="ai-assistant" element={<AIAssistant />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
